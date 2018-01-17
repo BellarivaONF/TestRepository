@@ -1,0 +1,140 @@
+
+function FindProxyForURL (url,host) {
+	if ( isPlainHostName(host) || host == "127.0.0.1" ) { 
+		return "DIRECT"; 
+	}
+	if ( dnsDomainIs(host, ".onf.fr") ) {
+		if ( localHostOrDomainIs(host, "www.smf-onf-expovirtuelle.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.retrouvance.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.espacerambouillet.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.mobibois.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.boutique.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.prestations.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.arboretumdesbarres.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.odysseeverte.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.ecoledelacampagne.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "rdinnovation.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "computree.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.grandeguerre.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.dunes-forets-aquitaine.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "www.campus.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "bdrtm.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".bdrtm.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "gitesetrandonnees.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".gitesetrandonnees.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "gites.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".gites.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "randonnees.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".randonnees.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "guadeloupe.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".guadeloupe.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "dra-sra.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".dra-sra.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "amenagements-forestiers.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".amenagements-forestiers.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "chasse.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".chasse.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "bdn-dom.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".bdn-dom.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "mobiliersbois.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( localHostOrDomainIs(host, "ventesdebois.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		if ( dnsDomainIs(host, ".ventesdebois.onf.fr") ) {
+			return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+		}
+		return "DIRECT";
+	}
+
+	var pos = host.search(/^(172\.(1[6-9]|2[0-9]|3[0-1])\.[0-9]+\.[0-9]+|192\.168\.[0-9]+\.[0-9]+|10\.[0-9]+\.[0-9]+\.[0-9]+)$/);
+	if ( pos != -1 )  {
+		return "DIRECT";
+	}
+
+	if ( localHostOrDomainIs(host, "controller.access.network") ) {
+		return "DIRECT";
+	}
+
+	if ( localHostOrDomainIs(host, "infotrade2000.net") ) {
+		return "PROXY proxy-infotrade2000.infra.onf.fr:8080;";
+	}
+
+	if ( dnsDomainIs(host, ".infra.sncf.fr") ) {
+		return "DIRECT";
+	}    
+	
+	if ( dnsDomainIs(host, "oxalys.franceagrimer.fr") ) {
+		return "DIRECT";
+	}
+
+	return "PROXY proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080; proxy.onf.fr:8080;";
+}
